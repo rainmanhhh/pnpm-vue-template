@@ -1,0 +1,44 @@
+{
+  "name": "fxfx-front",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "vue": "^2.5.16",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^6.0.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-beta.15",
+    "@vue/cli-plugin-typescript": "^3.0.0-beta.15",
+    "@vue/cli-service": "^3.0.0-beta.15",
+    "@vue/component-compiler-utils": "^2.0.0",
+    "ansi-regex": "^3.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "cache-loader": "^1.2.2",
+    "css-loader": "^0.28.11",
+    "postcss-loader": "^2.1.5",
+    "reflect-metadata": "^0.1.12",
+    "thread-loader": "^1.1.5",
+    "ts-loader": "^4.4.2",
+    "tslib": "^1.9.3",
+    "typescript": "^2.9.2",
+    "url-loader": "^1.0.1",
+    "vue-loader": "^15.2.4",
+    "vue-style-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.13.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
