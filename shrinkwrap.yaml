@@ -20,6 +20,7 @@ devDependencies:
   thread-loader: 1.1.5
   ts-loader: 4.4.2
   tslib: 1.9.3
+  tslint: 5.11.0
   typescript: 2.9.2
   url-loader: 1.0.1
   vue-loader: 15.2.4
@@ -2523,6 +2524,11 @@ packages:
     resolution:
       integrity: sha1-30boZ9D8Kuxmo0ZitAapzK//Ww8=
       tarball: /commander/download/commander-2.15.1.tgz
+  /commander/2.17.1:
+    dev: true
+    resolution:
+      integrity: sha1-vXerfebelCBc6sxy8XFtKfIKd78=
+      tarball: /commander/download/commander-2.17.1.tgz
   /commondir/1.0.1:
     dev: true
     resolution:
@@ -3366,13 +3372,14 @@ packages:
     resolution:
       integrity: sha1-luO3DVd59q1JzQMmc9HDEnZ7pYE=
       tarball: /esprima/download/esprima-2.7.3.tgz
-  /esprima/4.0.0:
+  /esprima/4.0.1:
     dev: true
     engines:
       node: '>=4'
+    hasBin: true
     resolution:
-      integrity: sha1-RJnt3NERDgshi6zy+n9/WfVcqAQ=
-      tarball: /esprima/download/esprima-4.0.0.tgz
+      integrity: sha1-E7BM2z5sXRnfkatph6hpVhmwqnE=
+      tarball: /esprima/download/esprima-4.0.1.tgz
   /esrecurse/4.2.1:
     dependencies:
       estraverse: 4.2.0
@@ -4970,8 +4977,9 @@ packages:
   /js-yaml/3.12.0:
     dependencies:
       argparse: 1.0.10
-      esprima: 4.0.0
+      esprima: 4.0.1
     dev: true
+    hasBin: true
     resolution:
       integrity: sha1-6u1lbsg0TxD1J8a/obbiJE3hZ9E=
       tarball: /js-yaml/download/js-yaml-3.12.0.tgz
@@ -6192,11 +6200,11 @@ packages:
     resolution:
       integrity: sha1-QRyttXTFoUDTpLGRDUDYDMn0C0A=
       tarball: /path-key/download/path-key-2.0.1.tgz
-  /path-parse/1.0.5:
+  /path-parse/1.0.6:
     dev: true
     resolution:
-      integrity: sha1-PBrfhx6pzWyUMbbqK9dKD/BVxME=
-      tarball: /path-parse/download/path-parse-1.0.5.tgz
+      integrity: sha1-1i27VnlAXXLEc37FhgDp3c8G0kw=
+      tarball: /path-parse/download/path-parse-1.0.6.tgz
   /path-to-regexp/0.1.7:
     dev: true
     resolution:
@@ -7205,7 +7213,7 @@ packages:
       tarball: /resolve-url/download/resolve-url-0.2.1.tgz
   /resolve/1.8.1:
     dependencies:
-      path-parse: 1.0.5
+      path-parse: 1.0.6
     dev: true
     resolution:
       integrity: sha1-gvHsGaQjrB+9CAsLqwa6NuhKeiY=
@@ -7316,6 +7324,7 @@ packages:
       tarball: /selfsigned/download/selfsigned-1.10.3.tgz
   /semver/5.5.0:
     dev: true
+    hasBin: true
     resolution:
       integrity: sha1-3Eu8emyp2Rbe5dQ1FvAJK1j3uKs=
       tarball: /semver/download/semver-5.5.0.tgz
@@ -8103,6 +8112,29 @@ packages:
     resolution:
       integrity: sha1-EeJrzLiK+gLdDZlWyuPUVAtfVMM=
       tarball: /tslint/download/tslint-5.10.0.tgz
+  /tslint/5.11.0:
+    dependencies:
+      babel-code-frame: 6.26.0
+      builtin-modules: 1.1.1
+      chalk: 2.4.1
+      commander: 2.17.1
+      diff: 3.5.0
+      glob: 7.1.2
+      js-yaml: 3.12.0
+      minimatch: 3.0.4
+      resolve: 1.8.1
+      semver: 5.5.0
+      tslib: 1.9.3
+      tsutils: 2.29.0
+    dev: true
+    engines:
+      node: '>=4.8.0'
+    hasBin: true
+    peerDependencies:
+      typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev'
+    resolution:
+      integrity: sha1-mPMMAurjzecAYgHkwzywi0hYHu0=
+      tarball: /tslint/download/tslint-5.11.0.tgz
   /tsutils/2.27.1/typescript@2.9.2:
     dependencies:
       tslib: 1.9.3
@@ -8114,6 +8146,15 @@ packages:
     resolution:
       integrity: sha1-qwJ2rCNmTzbOj9RBTa7Err9Dc+4=
       tarball: /tsutils/download/tsutils-2.27.1.tgz
+  /tsutils/2.29.0:
+    dependencies:
+      tslib: 1.9.3
+    dev: true
+    peerDependencies:
+      typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >= 3.0.0-dev || >= 3.1.0-dev'
+    resolution:
+      integrity: sha1-MrSIUBRnrL7dS4VJhnOggSrKC5k=
+      tarball: /tsutils/download/tsutils-2.29.0.tgz
   /tty-browserify/0.0.0:
     dev: true
     resolution:
@@ -8898,7 +8939,7 @@ packages:
       integrity: sha1-XAXbSMAS3vmcKbeWhba6LkDIxnE=
       tarball: /yorkie/download/yorkie-1.0.3.tgz
 registry: 'http://registry.npm.taobao.org/'
-shrinkwrapMinorVersion: 7
+shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@types/node': ^10.5.1
@@ -8916,6 +8957,7 @@ specifiers:
   thread-loader: ^1.1.5
   ts-loader: ^4.4.2
   tslib: ^1.9.3
+  tslint: ^5.11.0
   typescript: ^2.9.2
   url-loader: ^1.0.1
   vue: ^2.5.16
